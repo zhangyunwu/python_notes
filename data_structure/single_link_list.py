@@ -54,7 +54,8 @@ class SingleLinkList(object):
             cur.next = node
         
     def insert(self, pos, item):
-        """Insert the item to the appointed position of single link list."""
+        """Insert the item to the appointed position of single link list.
+        """
         if pos < 0:
             self.add(item)
         elif pos > self.length()-1:
@@ -151,3 +152,6 @@ if __name__ == "__main__":
     sll.remove(100)
     sll.travel()
     print('')
+
+    print('is sll empty?', sll.is_empty())
+    print('length of sll: ', sll.length())
