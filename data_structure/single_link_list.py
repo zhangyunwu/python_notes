@@ -1,5 +1,4 @@
 
-
 class Node(object):
     """Node of single link list.
     """
